@@ -1,0 +1,232 @@
+   * {
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+   }
+
+   /* Default styles */
+   video {
+       width: 100%;
+       height: 100vh;
+       object-fit: cover;
+       background-position: center;
+       position: relative;
+   }
+
+
+   .container {
+   position: absolute;
+       bottom: 70vh;
+       left: 26vw;
+   }
+
+   .container h1 {
+       color: white;
+       text-transform: capitalize;
+font-size: 3vw;
+font-family: serif;
+       letter-spacing: .2vw;
+   }
+   .setting {
+    position: absolute;
+        bottom: 20vh;
+        left: 73vw;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    
+    }
+    .setting .fa-size{
+    
+font-size: 3rem;
+color :white;
+
+    }
+    .setting-content{
+        display: flex;
+        gap: 1rem;
+      align-items: center;
+    }
+
+    .setting-content input{
+     padding: .5rem;
+     font-size: 1.2vw;
+    }
+    .setting-content button{
+
+     border-radius: 1vw;
+   
+     padding: .5rem;
+     font-size: 1.2vw;
+    }
+
+
+    @media (max-width: 2000px) {
+    
+          
+          video {
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+          
+        
+        .container h1 {
+            color: white;
+            text-transform: capitalize;
+     font-size: 3vw;
+     
+            letter-spacing: .2vw;
+            margin-left: -3vw;
+        }
+        .setting-content{
+          
+          
+         
+          position: absolute;
+          right: 2vw;
+        }
+        .setting .fa-size{
+    
+            font-size: 3rem;
+            color :white;
+            position: absolute;
+            left: .4vw;
+                }
+        
+    }
+
+
+    @media (max-width: 800px) {
+        video {
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+        }
+        .setting{
+            margin-bottom: 5vh;
+        }
+        .setting-content{
+            padding: .5rem;
+     font-size: 1.2vw;
+          }
+          .setting .fa-size{
+            font-size: 3rem;
+            color :white;
+
+                  }
+        
+    }
+
+    .hide{
+        display: none;
+    }
+
+
+
+
+
+    /* ?????????????????????? */
+    /* .container .time-container{
+
+        color: white;
+        display: flex;
+        gap: 5vw;
+justify-content: center;
+align-items: center;     
+margin-left: -5vw;   
+    }
+
+    .time-container h2{
+        text-align: center;
+     
+        font-size: 1.3rem;
+        filter: drop-shadow(100px 100px 20px yellow)  
+       
+    }
+
+    .time-container div{
+         text-align: center;
+    color: #00FFFF;
+        font-size: 3rem;
+
+
+       filter: drop-shadow(100px 100px 20px yellow)  
+       
+    }
+  
+    @media (max-width: 800px)
+    {
+  .container .time-container{
+    display: flexbox;
+    align-items: center;
+  }
+    } */
+
+  
+    .container {
+        text-align: center;
+        padding: 40px;
+      }
+    
+      .ok {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: white; /* Set text color to white */
+      }
+    
+      .time-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: white; /* Set text color to white */
+      }
+    
+      .time-container h2 {
+        font-size: 20px;
+        margin: 0;
+      }
+    
+      @media (max-width: 767px) {
+        .container {
+          padding: 20px;
+        }
+    
+        .ok {
+          font-size: 20px;
+        }
+    
+        .time-container {
+          flex-direction: row;
+        }
+    
+        .time-container h2 {
+          font-size: 18px;
+        }
+      }
+  @media (max-width: 522px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .ok {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .time-container {
+      gap: 5px;
+    }
+  
+    .time-container h2 {
+      font-size: 16px;
+    }
+  }
+  
